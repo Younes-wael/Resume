@@ -58,19 +58,30 @@ body, html {
 
 
 .profile-image-wrapper {
-    padding: 0.15rem;
-    background-color: #C0C0C0;
-    border-radius: 1rem; /* Adjusted to match the profile image */
-    display: flex;
+    padding: 0.2rem;
+    border-radius: 1rem; /* Adjusted for rounded corners */
     margin-top: 3rem; /* Space between top and profile section */
+    display: flex;
+
+
 }
 
 .profile-image {
     margin-top: -3rem;
-    width: 7rem; /* Adjust size as desired */
     height: auto;
-    border-radius: 0.7rem; /* Match border radius with wrapper */
+    border-radius: 0.8rem; /* Match border radius with wrapper */
+    width: 110px; /* Adjust size as desired */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5), 0px 0px 15px #4db8ff;
+
 }
+
+/* Glow effect on hover */
+.profile-image-wrapper:hover {
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5), 0px 0px 15px #4db8ff;
+    transform: scale(1.05); /* Subtle zoom on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 .text-overlay {
     margin-top: 2rem;

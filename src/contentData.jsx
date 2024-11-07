@@ -1,6 +1,12 @@
 // contentData.js (or contentData.jsx if you prefer using a separate component)
 import './contentData.css';
-import { FaEnvelope, FaPhone, FaGithub, FaUser, FaLaptopCode, FaBriefcase, FaGraduationCap ,FaUserCircle , FaPhoneAlt , FaIdBadge , FaAddressBook } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaGithub, FaUser, FaLaptopCode, FaBriefcase, FaGraduationCap, FaAddressBook, FaReact, FaJs, FaHtml5, FaCss3, FaPython  } from 'react-icons/fa';
+import { SiQt, SiGit,SiOpera, SiC } from 'react-icons/si';
+const CPlusPlusIcon = () => (
+    <svg width="20" height="20" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="50" fontSize="50" fontFamily="Arial" fill="currentColor">C++</text>
+    </svg>
+);
 
 export const contentData = [
     {
@@ -37,19 +43,19 @@ export const contentData = [
             <>
                 <h3>Programming languages:</h3>
                 <ul style={{paddingLeft: '20px'}}>
-                    <li>C++</li>
-                    <li>React</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Python</li>
+                    <li><SiC  /> C++</li>
+                    <li><FaReact /> React</li>
+                    <li><FaJs /> JavaScript</li>
+                    <li><FaHtml5 /> HTML </li>
+                    <li><FaCss3 /> CSS </li>
+                    <li><FaPython /> Python </li>
                 </ul>
                 <h3>Frameworks/Tools:</h3>
                 <ul style={{paddingLeft: '20px'}}>
-                    <li>Qt Frameworks</li>
-                    <li>Git</li>
+                    <li><SiQt/> Qt Frameworks</li>
+                    <li><SiGit/> Git</li>
+                    <li><SiOpera/> Opera Cloud</li>
                     <li>Ms Office</li>
-                    <li>Opera Cloud</li>
                 </ul>
                 <h3>Other:</h3>
                 <ul style={{paddingLeft: '20px'}}>
