@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset margins and paddings for the entire page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply global font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure body and root container take up full width and height */
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.hero-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2b3851;
+
+    overflow: hidden; /* Hide overflow initially */
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1B263B;
+    padding: 2rem;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('./assets/binaryAnimation2.gif'); /* Adjust the path if necessary */
+    background-size: cover;
+    overflow-y: auto; /* Allows scrolling within the sidebar */
+}
+
+.right-content {
+    flex-grow: 1;
+    margin-left: 20vw;
+    padding: 2rem;
+    overflow-y: auto; /* Allow main content to scroll */
+    color: #ffffff;
+    background-color: #1a202c;
+    height: 100vh; /* Ensures it fills the remaining space */
+}
+
+
+.profile-image-wrapper {
+    padding: 0.15rem;
+    background-color: #C0C0C0;
+    border-radius: 1rem; /* Adjusted to match the profile image */
+    display: flex;
+    margin-top: 3rem; /* Space between top and profile section */
+}
+
+.profile-image {
+    margin-top: -3rem;
+    width: 7rem; /* Adjust size as desired */
+    height: auto;
+    border-radius: 0.7rem; /* Match border radius with wrapper */
+}
+
+.text-overlay {
+    margin-top: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+.text-overlay.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.description {
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #bfbdbd;
+    max-width: 500px; /* Adjust the width to fit your design */
+    margin-left: auto;
+    margin-right: auto; /* Center-aligns the text block */
+}
+
+.button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.close-button {
+    padding: 0.4rem 1rem; /* Reduce padding further for Close Profile */
+    font-size: 0.9rem; /* Reduce font size specifically for close */
+    background-color: #e53e3e; /* Red background for Close Profile */
+}
+
+.close-button:hover {
+    background-color: #a11010; /* Darker red on hover */
+}
+
+/* Default color for View My Work button */
+.button:not(.close-button) {
+    background-color: #4d6dff;
+}
+
+.button:not(.close-button):hover {
+    background-color: #6583fa;
+}
+
+.sidebar-links {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.sidebar-links button {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 1.5rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0.375rem;
+}
+
+.sidebar-links button:hover {
+    color: #4299e1;
+    background-color: rgba(66, 153, 225, 0.1);
+}
+
+.right-content {
+    flex-grow: 1;
+    height: 100vh;
+    padding: 2rem;
+    overflow-y: auto;
+    color: #ffffff;
+    background-color: #1a202c;
+}
+
+.content-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #2d3748;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Add padding to each content section for a better layout */
+.content-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #2d3748;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section Styling */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #63b3ed; /* Change color on hover */
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: #63b3ed; /* Match the color of your links */
+}
+
+/* Get in Touch Link Styling */
+.get-in-touch {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #63b3ed;
+    text-decoration: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.get-in-touch:hover {
+    color: #4299e1;
+}
+
+.get-in-touch .view-more-icon {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.get-in-touch:hover .view-more-icon {
+    transform: translateX(5px); /* Moves arrow slightly on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .left-panel {
+        width: 100vw;
+        height: auto;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+}
+/* src/contentData.css */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    font-size: 2rem; /* Adjust font size if needed */
+    color: #63b3ed;
+    margin-bottom: 1rem;
+}
+
+.section-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem; /* Adjust icon size if needed */
+    color: #63b3ed; /* Match the color with title */
+}
