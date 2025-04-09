@@ -41,7 +41,7 @@ body, html {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url('./assets/binaryAnimation2.gif'); /* Adjust the path if necessary */
+    background-image: url('./assets/new.jpg'); /* Adjust the path if necessary */
     background-size: cover;
     overflow-y: auto; /* Allows scrolling within the sidebar */
 }

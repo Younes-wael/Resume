@@ -1,6 +1,6 @@
 // contentData.js (or contentData.jsx if you prefer using a separate component)
 import './contentData.css';
-import { FaEnvelope, FaPhone, FaGithub, FaUser, FaLaptopCode, FaBriefcase, FaGraduationCap, FaAddressBook, FaReact, FaJs, FaHtml5, FaCss3, FaPython  } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaPhone, FaGithub, FaUser, FaLaptopCode, FaBriefcase, FaGraduationCap, FaAddressBook, FaReact, FaJs, FaHtml5, FaCss3, FaPython  } from 'react-icons/fa';
 import { SiQt, SiGit,SiOpera, SiC } from 'react-icons/si';
 const CPlusPlusIcon = () => (
     <svg width="20" height="20" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -143,14 +143,18 @@ export const contentData = [
             <>
                 <div className="contact-methods">
                     <a href="mailto:younes-wael@outlook.com" className="contact-link">
-                        <FaEnvelope className="contact-icon" /> younes-wael@outlook.com
+                        <FaEnvelope className="contact-icon"/> younes-wael@outlook.com
                     </a>
                     <a href="tel:+4915734685305" className="contact-link">
-                        <FaPhone className="contact-icon" /> +49 1573 4685305
+                        <FaPhone className="contact-icon"/> +49 1573 4685305
                     </a>
-
-                    <a href="https://github.com/Younes-wael" target="_blank" rel="noopener noreferrer" className="contact-link">
-                        <FaGithub className="contact-icon" /> GitHub
+                    <a href="https://www.linkedin.com/in/wael-younes-6b7804309/" target="_blank"
+                       rel="noopener noreferrer" className="contact-link">
+                        <FaLinkedin className="contact-icon"/> LinkedIn
+                    </a>
+                    <a href="https://github.com/Younes-wael" target="_blank" rel="noopener noreferrer"
+                       className="contact-link">
+                        <FaGithub className="contact-icon"/> GitHub
                     </a>
 
                 </div>
